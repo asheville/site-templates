@@ -1,0 +1,45 @@
+#app { }
+
+#app-nav { 
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 999;
+  padding: 1em;
+}
+
+#app-nav-title {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  font-family: FuturaLight;
+  letter-spacing: 0.1em;
+  padding-top: 0.2em;
+}
+
+#app-nav-section {
+  display: inline-block;
+  color: white;
+  font-family: FuturaLight;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0 0.25em 0;
+}
+
+#app-nav-sections {
+  display: none;
+}
+
+#app-nav-sections li {
+  opacity: 0.5;
+  padding: 0.25em 0 0.25em 0;
+  text-align: right;
+  color: white;
+  font-family: FuturaLight;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+#app-nav-sections li:hover {
+  opacity: 1;
+}
