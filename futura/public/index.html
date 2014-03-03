@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Mark Hendrickson</title>
+
+    <!-- JavaScript Libraries -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src='//api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.js'></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="/styles/reset.css"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/general.css"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/app.css"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/stream.css"></script>
+
+    <!-- Library Styles -->
+    <link rel="stylesheet" href="//api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.css" />
+
+    <!-- OpenID -->
+    <link rel="openid.server" href="http://www.myopenid.com/server" />
+    <link rel="openid.delegate" href="http://mhendric.myopenid.com/" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="app-nav" onmouseover="$('#app-nav-sections').show();" onmouseout="$('#app-nav-sections').hide();">
+        <div id="app-nav-background"></div>
+        <div id="app-nav-title">MARK HENDRICKSON</div>
+        <div id="app-nav-section"> / recent activity</div>
+        <ul id="app-nav-sections">
+          <li>bio</li>
+          <li>software</li>
+          <li>status updates</li>
+          <li>posts</li>
+          <li>photos</li>
+          <li>videos</li>
+          <li>links</li>
+          <li>check-ins</li>
+          <li>q&amp;a</li>
+        </ul>
+      </div>
+
+      <ul id="stream">
+        <li class="stream-photo">
+          <img class="stream-photo-image" src="/images/examples/jaume.jpg" />
+          <img class="stream-photo-background-image" src="/images/examples/jaume.jpg" />
+          <div class="stream-photo-info">
+            <div class="stream-photo-title">Independence Day</div>
+            <div class="stream-photo-published-at">3 hours ago</div>
+            <div class="stream-photo-source">via <a href="#">Instagram</a></div>
+            <div class="stream-photo-map" id="stream-photo1-map"></div>
+          </div>
+          <script>
+            var map1 = L.mapbox.map('stream-photo1-map', 'markmhendrickson.gif8gi2h', {
+              center: [41.383096, 2.177671],
+              zoom: 12,
+              zoomControl: false,
+              infoControl: false
+            });
+            var marker1 = L.marker([41.383096, 2.177671]).addTo(map1);
+          </script>
+        </li>
+        <li class="stream-photo">
+          <img class="stream-photo-image" src="/images/examples/venice.jpg" />
+          <img class="stream-photo-background-image" src="/images/examples/venice.jpg" />
+          <div class="stream-photo-info">
+            <div class="stream-photo-title">Venice From Tower</div>
+            <div class="stream-photo-published-at">5 hours ago</div>
+            <div class="stream-photo-source">via <a href="#">Facebook</a></div>
+          </div>
+        </li>
+        <li class="stream-photo">
+          <img class="stream-photo-image" src="/images/examples/coffee.jpg" />
+          <img class="stream-photo-background-image" src="/images/examples/coffee.jpg" />
+          <div class="stream-photo-info">
+            <div class="stream-photo-title">Breakfast</div>
+            <div class="stream-photo-published-at">1 day ago</div>
+            <div class="stream-photo-source">via <a href="#">Instagram</a></div>
+          </div>
+        </li>
+        <li class="stream-photo">
+          <img class="stream-photo-image" src="/images/examples/stadium.jpg" />
+          <img class="stream-photo-background-image" src="/images/examples/stadium.jpg" />
+          <div class="stream-photo-info">
+            <div class="stream-photo-title">Barça vs. Granada</div>
+            <div class="stream-photo-published-at">2 days ago</div>
+            <div class="stream-photo-source">via <a href="#">Foursquare</a></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Metrics -->
+    <script type="text/javascript" src="metrics/google-analytics.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

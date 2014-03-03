@@ -1,0 +1,17 @@
+body { 
+  background: black; 
+  font-family: Futura, sans-serif; 
+  text-align: center;
+  cursor: default;
+}
+
+::selection { 
+  background: transparent; 
+}
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}

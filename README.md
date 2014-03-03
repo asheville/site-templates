@@ -1,4 +1,1 @@
-site-templates
-==============
-
-Template designs for websites powered by Asheville data
+This repository contains preliminary designs for websites powered by Asheville data.
